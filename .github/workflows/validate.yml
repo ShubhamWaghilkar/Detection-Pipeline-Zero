@@ -1,0 +1,17 @@
+---
+name: Validate Detection Rules
+
+"on":
+  push:
+    branches: ["main"]
+
+jobs:
+  lint-yaml:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Grab the code
+        uses: actions/checkout@v3
+      - name: Run YAML Linter
+        uses: ibiqlik/action-yamllint@v3
+        with:
+          file_or_dir: .
