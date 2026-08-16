@@ -1,5 +1,5 @@
 ---
-title: Multiple Failed Login Attempts
+title: Multiple Failed Login Attempts (Local Test) version 1
 status: experimental
 description: Detects a single user failing to log in multiple times.
 logsource:
