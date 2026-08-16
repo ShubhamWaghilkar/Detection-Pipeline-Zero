@@ -21,3 +21,10 @@ Every time a new rule is pushed or modified, the pipeline automatically:
 │   └── validate.yml       # The GitHub Actions CI/CD pipeline
 ├── bruteforce.yml         # Sigma detection rules
 └── README.md              # Project documentation
+
+✍️ How to Add a New Rule
+All rules must be written in valid YAML and follow the standard Sigma schema.
+Create a new .yml file in the root directory (e.g., suspicious_powershell.yml).
+Ensure the file begins with the --- document start marker.
+Define your detection logic using standard Sigma fields (title, status, description, logsource, detection).
+Save, commit, and push to trigger the automated validation pipeline.
